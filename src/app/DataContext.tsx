@@ -13,7 +13,7 @@ import { useGraphSetting } from "@/useGraphSetting";
 type DispatchSettings = ReturnType<typeof useGraphSetting>[1]
 
 interface SettingContextData {
-    graphData: GraphData | undefined
+    graphData: any
     setGraphData: Dispatch<SetStateAction<GraphData | undefined>>
     settings: GraphSettings
     dispatchSettings: DispatchSettings

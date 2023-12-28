@@ -23,7 +23,10 @@ const GraphHeader = () => {
       >
         <span className="mr-3 flex items-center">
           <Avatar>
-            <AvatarImage src={graphData?.data?.githubUser?.avatarUrl} />
+        
+            <AvatarImage 
+             
+            src={graphData?.data?.githubUser?.avatarUrl} />
             <AvatarFallback>TT</AvatarFallback>
           </Avatar>
         </span>
@@ -31,7 +34,10 @@ const GraphHeader = () => {
           className="text-xl font-bold group-hover:underline dark:text-slate-950"
           translate="no"
         >
-          {graphData?.data?.githubUser?.name}
+        
+          {
+                
+          graphData?.data?.githubUser?.name}
         </span>
       </Link>
 

@@ -13,7 +13,7 @@ const ContributionGraph = () => {
   }
     console.log("graphData2", graphData);
 
-   // @ts-ignore
+  
     if(!graphData?.data?.contributionCalendars){
          toast("Invalid Username")
          return 
@@ -26,8 +26,8 @@ const ContributionGraph = () => {
 
       <div className="flex flex-col gap-y-6 rounded-md px-4 py-2 shadow-md shadow-slate-50 border dark:border-white">
      
-        { // @ts-ignore
-        graphData?.data?.contributionCalendars?.map((calender) => {
+        { 
+        graphData?.data?.contributionCalendars?.map((calender : any) => {
           let [startYear, endYear] = settings.yearRange ?? [];
           startYear =
             startYear && Number.isInteger(Number(startYear))
